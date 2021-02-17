@@ -344,7 +344,7 @@ function translate() {
             .then((json) => {
                 result.value = json.responseData.translatedText;
             });
-    }  else if (inpType.value === 'Arabic' && resType.value === 'English') {
+    } else if (inpType.value === 'Arabic' && resType.value === 'English') {
         const url = new URL('https://api.mymemory.translated.net/get');
         const param = { q: input.value, langpair: 'ar-AE|en' };
         Object.keys(param).forEach((key) => {
