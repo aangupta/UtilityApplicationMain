@@ -48,3 +48,43 @@ select {
   height: 34px;
   text-align: center;
 }
+
+.box {
+  margin: 3rem 3rem;
+  padding: 1rem;
+  background-color: white;
+}
+
+.box-content {
+  text-align: left;
+  margin: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-header {
+  text-align: left;
+  margin: 10px;
+  padding: 5px;
+}
+
+.options {
+  background: #d3d3d3;
+  color: black;
+  border-radius: 3px;
+  width: 500px;
+  margin: 10px;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+label {
+  margin: 10px;
+  font-size: 2rem;
+  padding: 5px;
+}
