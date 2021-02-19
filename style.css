@@ -74,6 +74,7 @@ select {
   color: black;
   border-radius: 3px;
   width: 500px;
+  font-size: 1.5rem;
   margin: 10px;
 }
 
