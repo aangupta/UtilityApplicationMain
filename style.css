@@ -154,3 +154,15 @@ select {
   display: inline-block;
   color: black;
 }
+
+.stopwatch-button input[type=button],
+select {
+  box-sizing: border-box;
+  background: #d3d3d3;
+  text-decoration: solid;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 1rem;
+  display: inline-block;
+  color: black;
+}
