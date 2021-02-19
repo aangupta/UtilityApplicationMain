@@ -399,6 +399,6 @@ function translate() {
     }
 }
 
-convert.addEventListener('click', translate);
+/* convert.addEventListener('click', translate); */
 inpType.addEventListener('change', translate);
 resType.addEventListener('change', translate);
