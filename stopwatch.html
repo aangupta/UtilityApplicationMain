@@ -13,69 +13,45 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fliud">
-            <div class="navbar-header">
-                <a href="index.html" class="navbar-brand">Utility Application <i class="fa fa-wrench" aria-hidden="true"></i></a>
-            </div>
-            <ul class ="nav navbar-nav">
-                <li><a href="index.html">My Public IP Address</a></li>
-                <li><a href="timer.html">Timer</a></li>
-                <li class="active"><a href="stopwatch.html">Stopwatch</a></li>
-                <li><a href="languageTranslator.html">Language Translator</a></li>
-                <li class="dropdown">
-                    <a href="https://utilityapp1.netlify.app/" class="dropdown-toggle" data-toggle="dropdown">Encoder/Decoder<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="https://utilityapp1.netlify.app/" target="blank">URL Encoder/Decoder</a></li>
-                        <li><a href="https://utilityapp1.netlify.app/base64encode.html" target="blank">Base64 Encoder</a></li>
-                        <li><a href="https://utilityapp1.netlify.app/base64decode.html" target="blank">Base64 Decoder</a></li>
-                        <li><a href="https://utilityapp1.netlify.app/md5hash.html" target="blank">MD5 HashGenerator</a></li>
-                        <li><a href="https://utilityapp1.netlify.app/sha-1.html" target="blank">SHA-1 HashGenerator</a></li>
-                        <li><a href="https://utilityapp1.netlify.app/sha-256.html" target="blank">SHA-256 HashGenerator</a></li>
-                        <li><a href="https://utilityapp1.netlify.app/sha-512.html"target="blank">SHA-512 HashGenerator</a></li>
-                    </ul>
-                </li>
-
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Color Conversion<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="https://rgbhexutilityapp.netlify.app/" target="blank">RGB To Hex</a></li>
-                      <li><a href="https://rgbhexutilityapp.netlify.app/hextorgb.html" target="blank">Hex To RGB</a></li>
-                    </ul>
-                </li>
-                <li><a href="https://epochtimeconverter.netlify.app/" target="blank">Epoch Converter</a></li>
-
-                <li><a href="https://stringutilityapp.netlify.app/" target="blank">String Utility</a></li>
-
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Unit Converter<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="https://unitconvertertool.netlify.app/" target="blank">Length</a></li>
-                      <li><a href="https://unitconvertertool.netlify.app/temperature.html" target="blank">Temperature</a></li>
-                      <li><a href="https://unitconvertertool.netlify.app/weight.html" target="blank">Weight</a></li>
-                      <li><a href="https://unitconvertertool.netlify.app/time.html" target="blank">Time</a></li>
-                    </ul>
-                </li>
-                <li><a href="https://baseconverterapp.netlify.app/">Base Converter</a></li>
-
-            </ul>
+    <header>
+        <div class="hd-text">
+            <a style = "text-decoration: none;" href= "./stopwatch.html"class = "title" > <h2>Stopwatch</h2></a>
         </div>
-    </nav>
+        <div class="home">
+            <a style = "text-decoration: none;" href= "https://utilityappmain.netlify.app/index.html" class = "title" target="_blank" > <h2>Home</h2></a>
+        </div>     
+     </header>
 
-
-    <section class="wrapper" style="margin: 20rem; align-items: center;" >
-        <div class="timer" style="display: flex; flex-direction: column; align-items: center;">
-            <h1>Stopwatch</h1>
-            <div style="font-size: 4rem;">
+     <div class="warpper">
+         <div class="wrapper-left center">
+             <div class='span'>
                 <span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>:<span id="millisecond">000</span>
+             </div>
+             <div class ="stopwatch-button">
+                <input type="button" value ="Start" id="start" class="btn">
+                <input type="button" value="Pause" id="pause" class='btn'>
+                <input type="button" value="Reset" id="reset" class="btn">
             </div>
-            <div class ="stopwatch-button">
-                <input type="button" value ="Start" id="start">
-                <input type="button" value="Pause" id="pause">
-                <input type="button" value="Reset" id="reset">
-            </div>
+         </div>
+     </div>
+
+    
+
+    <footer>
+        <div class="footer-text">
+            <h4>Made with <span class="fa fa-heart"></span> by Aanchal</h4>
         </div>
-    </section>
+        <div class="footer-icons">
+            <ul>
+                <li> <a href="https://github.com/aangupta"class="fa fa-github"target="_blank" ></a></li>
+                <li> <a href="https://www.linkedin.com/in/aanchal-gupta-3ab35bb1/" class="fa fa-linkedin" target="_blank"></a></li>
+                <li><a href="https://twitter.com/aangupta5"class="fa fa-twitter"target="_blank"></a> </li>
+                <li> <a href="mailto: aanchalgupta457@gmail.com" class="fa fa-envelope" target="_blank"></a> </li>
+            </ul>
+            
+        </div>
+    </footer>
+
 
     <script>
 

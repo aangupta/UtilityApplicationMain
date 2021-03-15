@@ -12,74 +12,159 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fliud">
-            <div class="navbar-header">
-                <a href="index.html" class="navbar-brand">Utility Application <i class="fa fa-wrench" aria-hidden="true"></i></a>
+    <header>
+        <div class="hd-text">
+            <a style = "text-decoration: none;" href= "index.html" class = "title" > <h2>Utility Application</h2></a>
+        </div>
+
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="https://utilityapp1.netlify.app/" target="_blank">Encoder Decoder</a>
+            <a href="https://baseconverterapp.netlify.app/" target="_blank">Base Converter</a>
+            <a href="https://unitconvertertool.netlify.app/" target="_blank">Unit Converter</a>
+            <a href="https://epochtimeconverter.netlify.app/" target="_blank">TimeConverter</a>
+            <a href="https://rgbhexutilityapp.netlify.app/" target="_blank">Color Converter</a>
+            <a href="https://stringutilityapp.netlify.app/" target="_blank">String Utilities</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>        
+        
+   </header>
+
+   <div class="wrapper1">
+       <div class="boxx">
+          
+           <div class="box-content">
+            <img src="./images/ipaddress.png" alt="ipaddress" class="img">
+            <a href="./ipaddress.html">Know your IP</a>
+           </div>
+           <div class="box-content">
+            <img src="./images/language.png" alt="translator" class="img1">
+            <a href="./languageTranslator.html">Language Translator</a>
+           </div>
+           <div class="box-content">
+            <img src="./images/timer.png" alt="Timer" class="img">
+            <a href="./timer.html">Countdown Timer</a>
             </div>
-            <ul class ="nav navbar-nav">
-                <li class="active"><a href="index.html">My Public IP Address</a></li>
-                <li><a href="timer.html">Timer</a></li>
-                <li><a href="stopwatch.html">Stopwatch</a></li>
-                <li><a href="languageTranslator.html">Language Translator</a></li>
-                <li class="dropdown">
-                    <a href="https://utilityapp1.netlify.app/" class="dropdown-toggle" data-toggle="dropdown">Encoder/Decoder<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="https://utilityapp1.netlify.app/" target="blank">URL Encoder/Decoder</a></li>
-                        <li><a href="https://utilityapp1.netlify.app/base64encode.html" target="blank">Base64 Encoder</a></li>
-                        <li><a href="https://utilityapp1.netlify.app/base64decode.html" target="blank">Base64 Decoder</a></li>
-                        <li><a href="https://utilityapp1.netlify.app/md5hash.html" target="blank">MD5 HashGenerator</a></li>
-                        <li><a href="https://utilityapp1.netlify.app/sha-1.html" target="blank">SHA-1 HashGenerator</a></li>
-                        <li><a href="https://utilityapp1.netlify.app/sha-256.html" target="blank">SHA-256 HashGenerator</a></li>
-                        <li><a href="https://utilityapp1.netlify.app/sha-512.html"target="blank">SHA-512 HashGenerator</a></li>
-                    </ul>
-                </li>
-
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Color Conversion<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="https://rgbhexutilityapp.netlify.app/" target="blank">RGB To Hex</a></li>
-                      <li><a href="https://rgbhexutilityapp.netlify.app/hextorgb.html" target="blank">Hex To RGB</a></li>
-                    </ul>
-                </li>
-                <li><a href="https://epochtimeconverter.netlify.app/" target="blank">Epoch Converter</a></li>
-
-                <li><a href="https://stringutilityapp.netlify.app/" target="blank">String Utility</a></li>
-
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Unit Converter<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="https://unitconvertertool.netlify.app/" target="blank">Length</a></li>
-                      <li><a href="https://unitconvertertool.netlify.app/temperature.html" target="blank">Temperature</a></li>
-                      <li><a href="https://unitconvertertool.netlify.app/weight.html" target="blank">Weight</a></li>
-                      <li><a href="https://unitconvertertool.netlify.app/time.html" target="blank">Time</a></li>
-                    </ul>
-                </li>
-                <li><a href="https://baseconverterapp.netlify.app/">Base Converter</a></li>
-
-            </ul>
-        </div>
-    </nav>
-
-    <section style="margin: 300px;">
-       <div style="display: flex; flex-direction: column; margin: 1rem; align-items: center;">
-           <h1>My Public IP is</h1>
-           <input type = "text" id =ipaddress placeholder="My Public IP:" style="font-size: 3rem; height: 50px;">
+            <div class="box-content">
+            <img src="./images/stopwatch.png" alt="Stopwatch" class="img">
+            <a href="./stopwatch.html">Stopwatch</a>
+            </div>
+           
        </div>
-    </section>
+       <div class="wrapper-left">
+           <h3>List of Tools </h3>
+           <div class="box border">
+               <h3 class="h3">URL Encoder Decoder</h3>
+               <p>Encodes or decodes a string so that it conforms to the the Uniform Resource Locators Specification - URL (RFC 1738).
+                   <br>
+               The specification says that only the following characters are allowed in a URL: </p>
+               <ul>
+                   <li>ABCDEFGHIJKLMNOPQRSTUVWXYZ</li>
+                   <li>abcdefghijklmnopqrstuvwxyz</li>
+                   <li>0123456789</li>
+                   <li>$-_.+!*'()</li>
+               </ul>
+           </div>
+           
+           <div class="box border">
+               <h3 class='h3'>Base64 Encoder & Decoder</h3>
+               <p>Encodes or decodes a string so that it conforms to the Base64 Data Encodings specification (RFC 4648).</p>
+           </div>
+           <div class="box border">
+               <h3 class ='h3'>Cryptography & Security</h3>
+               <p>Generates a hash from a string using different algorithms. The different algorithms are-</p>
+               <ul>
+                   <li>MD5</li>
+                   <li>SHA-1</li>
+                   <li>SHA-256</li>
+                   <li>SHA-512</li>
+               </ul>
+           </div>
+           <div class="box border">
+               <h3 class ='h3'>Number Base Converter</h3>
+               <p>The different number-base conversion available are:</p>
+               <ul>
+                   <li>Decimal To Binary</li>
+                   <li>Decimal To Octal</li>
+                   <li>Decimal To Hexadecimal</li>
+                   <li>Binary to Decimal</li>
+                   <li>Binary to Octal</li>
+                   <li>Binary to Hexadecimal</li>
+                   <li>Octal to Binary</li>
+                   <li>Octal to Decimal</li>
+                   <li>Octal to Hexadecimal</li>
+                   <li>Hexadecimal to Binary</li>
+                   <li>Hexadecimal to Decimal</li>
+                   <li>Hexadecimal to Octal</li>
+               </ul>
+           </div>
+           <div class="box border">
+               <h3 class='h3'>Unit Converter</h3>
+               <p>The different unit converters available are:</p>
+               <ul>
+                   <li>Length</li>
+                   <li>Time</li>
+                   <li>Weight</li>
+                   <li>Temperature</li>
+               </ul>
+           </div>
+           <div class="box border">
+               <h3 class ='h3'> Epoch Timestamp to Date</h3>
+               <p>Converts an epoch/unix timestamp into a human readable date. It also lets you do the inverse, i.e. converts a human readable date into an epoch/unix timestamp. It also displays the current epoch/unix timestamp in both seconds.</p>
+               <ul>
+                   <li>Displays the current epoch timestamp in seconds</li>
+                   <li>Converts epoch timestamps from seconds/milliseconds to human readable date</li>
+                   <li>Converts human readable dates into epoch timestamps</li>
+               </ul>
+           </div>
 
-    <div class="footer" style="display: flex; flex-direction: row; align-items: center;">
-        <div class="footer-left">
-            <p>Created by &copy; Aanchal Gupta</p>
+           <div class="box border">
+               <h3 class='h3'>Color Converter</h3>
+               <p>The different color converters available are:</p>
+               <ul>
+                   <li>RGB to Hex</li>
+                   <li>Hex to RGB</li>
+               </ul>
+           </div>
+           <div class="box border">
+               <h3 class ='h3'>String Utilities</h3>
+               <p>A couple of string utilities available are:</p>
+               <ul>
+                   <li>Convert a string to lowercase or uppercase</li>
+                   <li>Character count</li>
+                   <li>Word count</li>
+                   <li>Reverse string</li>
+               </ul>
+           </div>
+
+       </div>
+   </div>
+
+    <footer>
+        <div class="footer-text">
+            <h4>Made with <span class="fa fa-heart"></span> by Aanchal</h4>
         </div>
-
-        <div class="footer-right" style ="display: flex; flex-direction: row; align-items: center;">
-
-            
+        <div class="footer-icons">
+            <ul>
+                <li> <a href="https://github.com/aangupta"class="fa fa-github"target="_blank" ></a></li>
+                <li> <a href="https://www.linkedin.com/in/aanchal-gupta-3ab35bb1/" class="fa fa-linkedin" target="_blank"></a></li>
+                <li><a href="https://twitter.com/aangupta5"class="fa fa-twitter"target="_blank"></a> </li>
+                <li> <a href="mailto: aanchalgupta457@gmail.com" class="fa fa-envelope" target="_blank"></a> </li>
+            </ul> 
         </div>
-    </div>
-
-   <script src="script.js"></script>
+    </footer>
+    <script>
+        function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+    </script>
 
 </body>
 </html>
